@@ -20,6 +20,9 @@ The examples assume:
   for all HTML elements is set to
   [`border-box`](https://css-tricks.com/box-sizing/),
   for consistency with the Flutter model.
+
+  HTML 文件以 `<!DOCTYPE html>` 开头，且为了与 Flutter 模型保持一致，所有 HTML 元素的 CSS 盒模型被设置为 [`border-box`](https://css-tricks.com/box-sizing/)。
+
   ```css
   {
     box-sizing: border-box;
@@ -27,21 +30,9 @@ The examples assume:
   ```
 * In Flutter, the default styling of the "Lorem ipsum" text is defined by the
   `bold24Roboto` variable as follows, to keep the syntax simple:
-  ```dart
-  TextStyle bold24Roboto = TextStyle(
-    color: Colors.white,
-    fontSize: 24.0,
-    fontWeight: FontWeight.w900,
-  );
-  ```
 
-* HTML 文件以 `<!DOCTYPE html>` 开头，且为了与 Flutter 模型保持一致，所有 HTML 元素的 CSS 盒模型被设置为 [`border-box`](https://css-tricks.com/box-sizing/)。
-  ```css
-  {
-    box-sizing: border-box;
-  }
-  ```
-* 在 Flutter 中，为了保持语法简洁，"Lorem ipsum" 文本的默认样式由如下 `bold24Roboto` 变量定义：
+  在 Flutter 中，为了保持语法简洁，"Lorem ipsum" 文本的默认样式由如下 `bold24Roboto` 变量定义：
+
   ```dart
   TextStyle bold24Roboto = TextStyle(
     color: Colors.white,
